@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Practice</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .btn {
+            width: 100px;
+            height: 24px;
+            cursor: pointer;
+            border-radius: 20px;
+            border: 1px solid rgb(100, 100, 100);
+            transition: 0.8s;
+        }
+        
+        .btn:hover {
+            width: 200px;
+        }
+        
+        #btn-o:hover {
+            background-color: green;
+            color: white;
+            border: none;
+        }
+        
+        #btn-c:hover {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn" id="btn-o" type="button">O</button>
+        <button class="btn" id="btn-c" type="button">X</button>
+    </div>
+    <script>
+        $('#btn-o').on('click', function() {
+            alert('Your Session is Open!');
+        })
+        $('#btn-c').on('click', function() {
+            alert('Your Session is Close!');
+        })
+    </script>
+</body>
+
+</html>
